@@ -13,6 +13,10 @@ function! wilder#renderer#popupmenu_border_theme#(opts) abort
       let l:border_chars = ['╔', '═', '╗',
             \               '║',      '║',
             \               '╚', '═', '╝']
+    elseif l:border_chars ==# 'none'
+      let l:border_chars = [' ', ' ', ' ',
+            \               ' ',      ' ',
+            \               ' ', ' ', ' ']
     else
       " single
       let l:border_chars = ['┌', '─', '┐',
